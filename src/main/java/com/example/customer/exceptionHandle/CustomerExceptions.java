@@ -18,32 +18,32 @@ public class CustomerExceptions {
 	
 	@ExceptionHandler(CustomerNameNotFoundException.class)
 	public ResponseEntity<Object> nameNotFound() {
-		return new ResponseEntity<>("No Data in this Name", HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("No Data available in this Name", HttpStatus.NOT_FOUND);
 	}
 	
 	@ExceptionHandler(CustomerIdNotFoundException.class)
 	public ResponseEntity<Object> idNotFound() {
-		return new ResponseEntity<>("No Data in this ID", HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("No Data available in this ID", HttpStatus.NOT_FOUND);
 	}
 	
 	@ExceptionHandler(CustomerNotFoundByEmailIdException.class)
 	public ResponseEntity<Object> mailIdNotFound() {
-		return new ResponseEntity<>("No Data in this MailId", HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("No Data available in this MailId", HttpStatus.NOT_FOUND);
 	}
 	
 	@ExceptionHandler(CustomerNotFoundByGenderException.class)
 	public ResponseEntity<Object> genderNotFound() {
-		return new ResponseEntity<>("No Data in this Gender", HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("No Data available in this Gender", HttpStatus.NOT_FOUND);
 	}
 	
 	@ExceptionHandler(CustomerNotFoundByPhoneNumberException.class)
 	public ResponseEntity<Object> phoneNoNotFound() {
-		return new ResponseEntity<>("No Data in this PhoneNumber", HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("No Data available in this PhoneNumber", HttpStatus.NOT_FOUND);
 	}
 	
 	@ExceptionHandler(CustomerNotFoundByPuchaseValueException.class)
 	public ResponseEntity<Object> purchaseValueNotFound() {
-		return new ResponseEntity<>("No Data in this Purchase Value", HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("No Data available in this Purchase Value", HttpStatus.NOT_FOUND);
 	}
 	
 	@ExceptionHandler(BankCoustomerBranchNotFoundException.class)
