@@ -1,10 +1,15 @@
 package com.example.customer.entity;
 
+import jakarta.persistence.Transient;
+import jakarta.transaction.Transactional;
+
+@Transactional
 public class Bank {
 
 	private int id;
 	private String name;
 	private String ifscCode;
+	@Transient
 	private String branch;
 
 	public int getId() {
